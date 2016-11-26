@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.pilot.viewhelperdemo.scroller.ScrollerTextView
+        android:id="@+id/text_scroller_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="Hello World!"
+        android:textColor="@android:color/holo_green_dark"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_scroll_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scroll To" />
+
+        <Button
+            android:id="@+id/btn_scroll_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scroll By" />
+
+        <Button
+            android:id="@+id/btn_spring_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Spring Back" />
+    </LinearLayout>
+</RelativeLayout>
