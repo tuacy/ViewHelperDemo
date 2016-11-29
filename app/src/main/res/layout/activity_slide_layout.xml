@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pilot.viewhelperdemo.viewdraghelp.SlideLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_slide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 主内容区 -->
+    <LinearLayout
+        android:id="@id/id_slide_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="content view"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/list_content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <!-- 左侧菜单区域 -->
+    <LinearLayout
+        android:id="@id/id_slide_left"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/holo_orange_dark">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="center"
+            android:text="left view"
+            android:textSize="20sp"
+            android:background="@android:color/holo_blue_light" />
+
+        <LinearLayout
+            android:id="@+id/layout_left_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_message_alerts"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/app_name"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="center_vertical"
+                android:text="设置"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 右侧菜单区域 -->
+    <LinearLayout
+        android:id="@id/id_slide_right"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@android:color/holo_green_dark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="right view"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</com.pilot.viewhelperdemo.viewdraghelp.SlideLayout>

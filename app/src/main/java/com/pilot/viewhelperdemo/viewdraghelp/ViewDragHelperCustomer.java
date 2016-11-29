@@ -512,8 +512,6 @@ public class ViewDragHelperCustomer {
 		final int dx = finalLeft - startLeft;
 		final int dy = finalTop - startTop;
 
-		Log.d("tuacy", "dx = " + dx + "  dy = " + dy);
-
 		if (dx == 0 && dy == 0) {
 			// Nothing to do. Send callbacks, be done.
 			mScroller.abortAnimation();
@@ -1094,7 +1092,6 @@ public class ViewDragHelperCustomer {
 						final float dx = x - mInitialMotionX[pointerId];
 						final float dy = y - mInitialMotionY[pointerId];
 
-						Log.d("tuacy", "reportNewEdgeDrags");
 						reportNewEdgeDrags(dx, dy, pointerId);
 						if (mDragState == STATE_DRAGGING) {
 							// Callback might have started an edge drag.
